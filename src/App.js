@@ -169,7 +169,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div style={{ height: "100vh", textAlign: "center"}}>
-        <Typography variant="h3">👋 Hey there! I am Stanley!</Typography>
+        <Typography variant="h3"><span role="img" aria-label="hand waving">👋</span> Hey there! I am Stanley!</Typography>
         <div className="bio">
           I am Stanley from Hong Kong! I love coding, games, basketball and
           food!
@@ -182,7 +182,7 @@ export default function App() {
           <div>
             {lastWaver && <h3>Last Waver: {lastWaver}</h3>}
             <WaveInput
-              contractAddress={contractAddress}
+              contractAddress={contractAddress} 
               contractABI={contractABI}
             />
             {allWaves.map((wave, index) => {
