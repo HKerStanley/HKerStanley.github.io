@@ -1,10 +1,10 @@
-import { createTheme } from "@material-ui/core";
+import { extendTheme } from "@chakra-ui/react";
 
-// A custom theme for this app
-const theme = createTheme({
-  palette: {
-    type: "dark",
-  },
-});
+const config = {
+  initialColorMode: "dark",
+  useSystemColorMode: true,
+};
+
+const theme = extendTheme({ config });
 
 export default theme;
